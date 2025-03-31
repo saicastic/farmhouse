@@ -3,7 +3,7 @@ import React from "react";
 
 const HomeAboutus = () => {
   return (
-    <section className="w-full bg-red-200">
+    <section className="w-full bg-red-200 mt-6">
       <div className="flex w-full">
         <div className="flex-[1]">
           <Image
