@@ -1,16 +1,20 @@
+"use client";
+
 import FeaturesSection from "@/components/homesections/FeaturesSection";
 import HomeAboutus from "@/components/homesections/HomeAboutus";
 import HomeHero from "@/components/homesections/HomeHero";
 import ZoomParallax from "@/components/homesections/ZoomParallax";
-import Image from "next/image";
+import { ReactLenis } from "lenis/react";
 
 export default function Home() {
   return (
-    <>
-      <HomeHero />
-      <FeaturesSection />
-      <ZoomParallax />
-      <HomeAboutus />
-    </>
+    <ReactLenis root>
+      <main>
+        <HomeHero />
+        <FeaturesSection />
+        <ZoomParallax />
+        <HomeAboutus />
+      </main>
+    </ReactLenis>
   );
 }
