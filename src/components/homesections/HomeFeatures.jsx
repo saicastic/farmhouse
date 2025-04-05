@@ -4,7 +4,7 @@ import React from "react";
 const HeroFeatures = ({ items }) => {
   return (
     <section
-      className="w-full min-h-[90vh] relative py-12 px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16"
+      className="w-full min-h-[90vh] relative py-12 flex items-center flex-row px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16"
       style={{
         backgroundColor: "#F3F3F3",
         backgroundImage: `
@@ -20,10 +20,10 @@ const HeroFeatures = ({ items }) => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center gap-4 sm:gap-6"
+              className="group flex flex-col items-center gap-1 sm:gap-3"
             >
               {/* Image Container */}
-              <div className="w-full aspect-square relative rounded-xl overflow-hidden shadow-lg">
+              <div className="w-full aspect-[9/14] relative overflow-hidden shadow-lg">
                 <Image
                   src={item.image}
                   fill
@@ -33,8 +33,8 @@ const HeroFeatures = ({ items }) => {
               </div>
 
               {/* Text Box */}
-              <div className="w-full bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center shadow-lg">
-                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-800 mb-2">
+              <div className="w-full p-4 sm:p-6 text-center ">
+                <h3 className="text-sm sm:text-base uppercase md:text-lg lg:text-xl font-semibold text-gray-800 mb-2">
                   {item.title}
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base text-gray-600">
