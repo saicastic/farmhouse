@@ -19,15 +19,24 @@ const ZoomParallax = () => {
   const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
 
   const pictures = [
-    { src: "/roomimgs/room1.avif", scale: scale4 },
+    { src: "/roomimgs/room7.avif", scale: scale4 },
     { src: "/roomimgs/room2.avif", scale: scale5 },
     { src: "/roomimgs/room3.avif", scale: scale6 },
-    { src: "/roomimgs/room4.avif", scale: scale5 },
-    { src: "/roomimgs/room5.webp", scale: scale6 },
+    { src: "/roomimgs/room6.avif", scale: scale5 },
+    { src: "/roomimgs/room5.avif", scale: scale6 },
+    { src: "/roomimgs/room4.avif", scale: scale8 },
+    { src: "/roomimgs/room1.avif", scale: scale9 },
   ];
 
   return (
     <div ref={container} className={styles.container}>
+      {/* <div className="w-full text-center py-4 md:py-8 px-4 sm:px-6">
+        <h3 className="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase font-black tracking-tighter md:tracking-wider transition-all duration-300 hover:scale-105">
+          <span className="bg-gradient-to-r from-black to-stone-950 bg-clip-text text-transparent">
+            ROOMS EXPERIENCE
+          </span>
+        </h3>
+      </div> */}
       <div className={styles.sticky}>
         {pictures.map(({ src, scale }, index) => {
           return (

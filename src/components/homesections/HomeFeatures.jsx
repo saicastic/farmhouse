@@ -16,6 +16,13 @@ const HeroFeatures = ({ items }) => {
       }}
     >
       <div className="max-w-[1920px] mx-auto my-auto relative">
+        <div className="w-full text-center py-4 md:py-8 px-4 sm:px-6">
+          <h3 className="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase font-black tracking-tighter md:tracking-wider transition-all duration-300 hover:scale-105">
+            <span className="bg-gradient-to-r from-black to-stone-950 bg-clip-text text-transparent">
+              FACILITIES
+            </span>
+          </h3>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
           {items.map((item, index) => (
             <div

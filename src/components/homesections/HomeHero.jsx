@@ -21,7 +21,8 @@ const HomeHero = () => {
         {/* Desktop Image */}
         <div className="hidden md:block w-full h-full">
           <Image
-            src="/roomimgs/room6.avif" // Keep your original desktop image
+            unoptimized
+            src="/roomimgs/room2.avif" // Keep your original desktop image
             fill
             alt="Desktop room image"
             className="object-cover"
@@ -31,7 +32,7 @@ const HomeHero = () => {
         </div>
 
         {/* Black Overlay */}
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}

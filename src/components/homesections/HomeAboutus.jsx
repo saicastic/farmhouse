@@ -9,9 +9,9 @@ const HomeAboutus = ({ title, description, buttonText, imgUrl, bgColor }) => {
       }`}
       style={bgColor.startsWith("#") ? { backgroundColor: bgColor } : {}}
     >
-      <div className="flex flex-col md:flex-row w-full max-w-[1920px] mx-auto">
+      <div className="flex flex-col md:flex-row w-full max-w-full mx-auto">
         {/* Image Container */}
-        <div className="w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative overflow-hidden order-2 md:order-1">
+        <div className="w-full md:w-1/2 h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] relative overflow-hidden order-2 md:order-1">
           <Image
             src={imgUrl}
             fill

@@ -10,7 +10,7 @@ const HomeDescription = () => {
         <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 mb-4 sm:mb-6 md:mb-8">
           <Image
             src="/svg/temp.svg"
-            layout="responsive"
+            unoptimized
             width={100}
             height={100}
             alt="Company logo"
