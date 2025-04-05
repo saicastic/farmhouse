@@ -11,7 +11,7 @@ import { ReactLenis } from "lenis/react";
 export default function Home() {
   return (
     <ReactLenis root>
-      <main className="pb-6">
+      <main>
         <HomeHero />
         <FeaturesSection />
         <ZoomParallax />
@@ -36,12 +36,12 @@ export default function Home() {
               description: "Crafted with finest materials",
             },
             {
-              image: "/roomimgs/room2.avif",
+              image: "/roomimgs/room4.avif",
               title: "Premium Quality",
               description: "Crafted with finest materials",
             },
             {
-              image: "/roomimgs/room2.avif",
+              image: "/roomimgs/room6.avif",
               title: "Premium Quality",
               description: "Crafted with finest materials",
             },
