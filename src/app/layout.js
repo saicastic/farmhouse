@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FloatingNav } from "@/components/common/FloatingNav";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import Footer from "@/components/common/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
       >
         <FloatingNav navItems={navItems} />
         {children}
+        <Footer />
       </body>
     </html>
   );
