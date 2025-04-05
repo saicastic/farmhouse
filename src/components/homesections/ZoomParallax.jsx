@@ -32,7 +32,7 @@ const ZoomParallax = () => {
         {pictures.map(({ src, scale }, index) => {
           return (
             <motion.div
-              style={{ scale: scale4 }}
+              style={{ scale: scale }}
               key={index}
               className={styles.el}
             >
